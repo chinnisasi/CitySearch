@@ -23,14 +23,14 @@ Standard _ViewController_ with a MKMapView. It gets the city as a parameter pass
 
 
 ## View Model
-**CitySearchViewModel** contains all the business logic and data the needs to be shown on **CitySearchViewController**
+**CitySearchViewModel** contains all the business logic and data that needs to be shown on **CitySearchViewController**
 
 ## Utilities
 
 **FilterUtil** class is a helper class to filter data based on search criteria using binary search.
 Data is loaded from _JSON_ file  and the items are sorted and binary search is applied to filter data.
 
-### Algorithm for Searching
+### Algorithm
 Sorted the given  200,000+ items and used **binary search** to find the start and last index  (range) of the prefix match with given search word.
 
 binary search is efficient for search in a sorted array, with worst case complexity of  O(log n)  comparisions.
